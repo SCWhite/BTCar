@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/imageButtonStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@android:drawable/btn_star" />
+
+    <ImageButton
+        android:id="@+id/imageButtonForward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageButtonStop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:maxHeight="55dip"
+        android:maxWidth="55dip"
+        android:scaleType="centerInside"
+        android:src="@drawable/forward_play" />
+
+    <ImageButton
+        android:id="@+id/imageButtonRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageButtonBackward"
+        android:layout_marginLeft="35dp"
+        android:layout_toRightOf="@+id/imageButtonStop"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:maxHeight="55dip"
+        android:maxWidth="55dip"
+        android:scaleType="centerInside"
+        android:src="@drawable/right_play" />
+
+    <ImageButton
+        android:id="@+id/imageButtonBackward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButtonStop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_toLeftOf="@+id/imageButton4"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:maxHeight="55dip"
+        android:maxWidth="55dip"
+        android:scaleType="centerInside"
+        android:src="@drawable/backward_play" />
+
+    <ImageButton
+        android:id="@+id/imageButtonLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="35dp"
+        android:layout_toLeftOf="@+id/imageButtonStop"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:maxHeight="55dip"
+        android:maxWidth="55dip"
+        android:scaleType="centerInside"
+        android:src="@drawable/left_play" />
+
+    <Switch
+        android:id="@+id/swIdStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/swPtClean" />
+
+</RelativeLayout>
