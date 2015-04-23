@@ -1,12 +1,15 @@
 #include <SoftwareSerial.h>
-#include <Wire.h>//引用二個函式庫SoftwareSerial及Wire
+//#include <Wire.h>//引用二個函式庫SoftwareSerial及Wire
 #include <Servo.h>
 
-SoftwareSerial I2CBT(10,11);//定義PIN10及PIN11分別為RX及TX腳位
+//定義PIN10及PIN11分別為RX及TX腳位
+SoftwareSerial I2CBT(10,11);
+
 //伺服馬達
 Servo servoX, servoY;
 int valX, posX=1450; // 暫存類比輸入值的變數
 int valY, posY=1450;
+
 //直流馬達
 const int motorIn1 = 4;
 const int motorIn2 = 3;
@@ -16,27 +19,28 @@ const int motorIn4 = 6;
 //int s=150;
 
 void setup() {
-   Serial.begin(9600); //Arduino起始鮑率：9600
-   I2CBT.begin(9600); 
-//藍牙鮑率：57600(注意！每個藍牙晶片的鮑率都不太一樣，請務必確認
-   pinMode(13, OUTPUT);  //設定 pin13 為輸出，LED就接在這
+  //Arduino起始鮑率：9600
+  Serial.begin(9600); 
+  I2CBT.begin(9600); 
+  pinMode(13, OUTPUT);  //設定 pin13 LED就接在這
+  
   //伺服馬達
   //servoX.attach(7,500, 2400); // 設定伺服馬達的接腳
   //servoY.attach(8,500, 2400);
   servoX.write(90); // 一開始先置中90度
   servoY.write(90); // 一開始先置中90度
+  
   //直流馬達
   pinMode(motorIn1, OUTPUT);
   pinMode(motorIn2, OUTPUT);
   pinMode(motorIn3, OUTPUT);
   pinMode(motorIn4, OUTPUT);
-  //pinMode(8, OUTPUT);
 }
 
 void loop() {
   byte cmmd[20];
   int insize;
-  //analogWrite(9, 150);//速度設定
+  
   while(1){
     analogWrite(9, 150);//速度設定
     analogWrite(8, 150);//速度設定
@@ -46,7 +50,7 @@ void loop() {
       for (int i=0; i<insize; i++){
         Serial.print(cmmd[i]=char(I2CBT.read()));
         Serial.print(" ");
-      }//此段請參考上一篇解釋
+      }
     }
     switch (cmmd[0]) { //讀取第一個字
         case 97: //97為"a"的ASCII CODE
