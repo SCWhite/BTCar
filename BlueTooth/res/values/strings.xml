@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BlueTooth</string>
+    
+    <string name="tvPtMain">藍芽機器人</string>
+    <string name="btPtBTCheck">是否支援藍芽</string>
+    <string name="btPtBTCheckOpen">是否已開啟藍芽</string>
+    <string name="btPtBTCanBeFound">開放搜尋</string>
+	<string name="btPtBTClose">關閉藍芽</string>
+	<string name="btPtBTConnectBefore">連接裝置</string>
+	<string name="btPtBTSendMsg">發送msg</string>
+	
+	<string name="tvPtControlMenu">控制選項</string>
+	<string name="btPtBTFreeMode">自由操作</string>
+	<string name="btPtBTMemoryPath">路徑記憶</string>
+	<string name="btPtBTRandom">隨機打掃</string>
+	
+	<string name="tvPtMove">移動</string>
+	<string name="swPtClean">打掃</string>
+	
+	<string name="tvPtMemoryPath">路徑記憶</string>
+	<string name="swPtRemember">開始記憶</string>
+	<string name="swPtStratMove">開始打掃</string>
+</resources>

@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btIdBTCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btPtBTCheck"/>
+
+    <Button
+        android:id="@+id/btIdBTCheckOpen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btIdBTCheck"
+        android:text="@string/btPtBTCheckOpen" />
+    
+    <Button
+        android:id="@+id/btIdBTClose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btIdBTCheckOpen"
+        android:text="@string/btPtBTClose" />
+    
+    <Button
+        android:id="@+id/btIdBTCanBeFound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btIdBTClose"
+        android:text="@string/btPtBTCanBeFound" />
+    
+    <Button
+        android:id="@+id/btIdBTConnectBefore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btIdBTCanBeFound"
+        android:text="@string/btPtBTConnectBefore" />
+	
+    
+    <Button
+        android:id="@+id/btIdBTSendMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btIdBTConnectBefore"
+        android:text="@string/btPtBTSendMsg" />
+    
+</RelativeLayout>
