@@ -7,7 +7,7 @@
     android:orientation="vertical" >
 
     <ImageButton
-        android:id="@+id/imageButton1"
+        android:id="@+id/imageButtonStopRecord"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -15,10 +15,10 @@
         android:src="@android:drawable/btn_star" />
 
     <ImageButton
-        android:id="@+id/imageButtonForward"
+        android:id="@+id/imageButtonForwardRecord"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/imageButton1"
+        android:layout_above="@+id/imageButtonStopRecord"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="50dp"
         android:adjustViewBounds="true"
@@ -29,12 +29,12 @@
         android:src="@drawable/forward_play" />
 
     <ImageButton
-        android:id="@+id/imageButtonRight"
+        android:id="@+id/imageButtonRightRecord"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/imageButtonBackward"
+        android:layout_above="@+id/imageButtonBackwardRecord"
         android:layout_marginLeft="35dp"
-        android:layout_toRightOf="@+id/imageButton1"
+        android:layout_toRightOf="@+id/imageButtonStopRecord"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
         android:maxHeight="55dip"
@@ -43,13 +43,12 @@
         android:src="@drawable/right_play" />
 
     <ImageButton
-        android:id="@+id/imageButtonBackward"
+        android:id="@+id/imageButtonBackwardRecord"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageButton1"
+        android:layout_below="@+id/imageButtonStopRecord"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
-        android:layout_toLeftOf="@+id/imageButton4"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
         android:maxHeight="55dip"
@@ -58,12 +57,12 @@
         android:src="@drawable/backward_play" />
 
     <ImageButton
-        android:id="@+id/imageButtonLeft"
+        android:id="@+id/imageButtonLeftRecord"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_marginRight="35dp"
-        android:layout_toLeftOf="@+id/imageButton1"
+        android:layout_toLeftOf="@+id/imageButtonStopRecord"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
         android:maxHeight="55dip"

@@ -46,16 +46,19 @@ public final class R {
         public static final int btIdBTMemoryPath=0x7f070001;
         public static final int btIdBTRandom=0x7f070002;
         public static final int btIdBTSendMsg=0x7f070008;
-        public static final int imageButton1=0x7f070009;
-        public static final int imageButton4=0x7f07000d;
-        public static final int imageButtonBackward=0x7f07000c;
-        public static final int imageButtonForward=0x7f07000a;
-        public static final int imageButtonLeft=0x7f07000e;
-        public static final int imageButtonRight=0x7f07000b;
-        public static final int imageButtonStop=0x7f070011;
-        public static final int swIdStart=0x7f070012;
-        public static final int swIdStartRemember=0x7f07000f;
-        public static final int swIdStratMove=0x7f070010;
+        public static final int imageButtonBackward=0x7f070013;
+        public static final int imageButtonBackwardRecord=0x7f07000c;
+        public static final int imageButtonForward=0x7f070011;
+        public static final int imageButtonForwardRecord=0x7f07000a;
+        public static final int imageButtonLeft=0x7f070014;
+        public static final int imageButtonLeftRecord=0x7f07000d;
+        public static final int imageButtonRight=0x7f070012;
+        public static final int imageButtonRightRecord=0x7f07000b;
+        public static final int imageButtonStop=0x7f070010;
+        public static final int imageButtonStopRecord=0x7f070009;
+        public static final int swIdStart=0x7f070015;
+        public static final int swIdStartRemember=0x7f07000e;
+        public static final int swIdStratMove=0x7f07000f;
     }
     public static final class layout {
         public static final int control_menu=0x7f030000;

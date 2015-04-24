@@ -49,7 +49,6 @@
         android:layout_below="@+id/imageButtonStop"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
-        android:layout_toLeftOf="@+id/imageButton4"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
         android:maxHeight="55dip"
